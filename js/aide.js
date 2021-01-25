@@ -61,10 +61,28 @@ window.onload = function(){
         var tableau = ["Hello", "World !"];
         console.log("value tableau 0",tableau[0]);
         console.log("value tableau 1",tableau[1]);
+
         // mise en pratique tableau + boucle pour parcourir notre tableau
+
         for(k = 0; k < 2; k = k + 1){
             console.log('boucle + tableau :', 'indice: ', k, "valeur: ", tableau[k]);
         }
-        
 
+        // Ou bien on peut itérer dans un tableau avec la boucle du dessous
+
+        var tableau2 = ["foo", "bar", "foo", "baz"];
+        for(var item of tableau2){
+            console.log("item tableau: ", item);
+        }
+
+        // Boucle pour itérer dans un objet(collection, dictionnaire)
+        var monObj = {
+            foo: "bar",
+            hello: "world",
+            age: 30
+        }
+
+        for(var keyObject in monObj){
+            console.log("key: ",keyObject, "value: ", monObj[keyObject]);
+        }
 }
