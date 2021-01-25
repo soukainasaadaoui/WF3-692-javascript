@@ -1,26 +1,22 @@
 window.onload = function(){
-    // Les types de valeurs que peut prendre une variable en javascript
-    var a = 1;
-    var b = "";
-    var c = [1, "", {}, function(){}, false, true];
-    var d = {
-        color: "red",
-        number: 1,
-        tableau: [],
-        obj: {},
-        func: function(){},
-        bool1: true,
-        bool2: false
-    };
+    // Boucle for fonctionnement 
+    for(var i = 0; i <= 10; i = i + 1){
+        console.log("boucle for: ",i)
+    }
 
-    console.log("type property", typeof d.color,"property color: ", d.color);
-    console.log("type property", typeof d.number,"property number: ", d.number);
-    console.log("type property", typeof d.tableau,"property tableau: ", d.tableau);
-    console.log("type property", typeof d.obj,"property obj: ", d.obj);
-    console.log("type property", typeof d.func,"property func: ", d.func);
-    console.log("type property", typeof d.bool1,"property bool1", d.bool1);
-    console.log("type property", typeof d.bool2, "property bool2", d.bool2);
+    // Boucle While
+    var j = 0;
+    while(j <= 10){
+        console.log("boucle while: ", j);
+        j = j + 1;
+    }
 
-    var e = function(){};
-    var f = true || false;
+    // Les tableaux
+    var tableau = ["Hello", "World !"];
+    console.log("value tableau 0",tableau[0]);
+    console.log("value tableau 1",tableau[1]);
+    // mise en pratique tableau + boucle pour parcourir notre tableau
+    for(k = 0; k < 2; k = k + 1){
+        console.log('boucle + tableau :', 'indice: ', k, "valeur: ", tableau[k]);
+    }
 }
