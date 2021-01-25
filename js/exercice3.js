@@ -16,3 +16,6 @@ var fruits = {
 
  // @ToDo 
  
+ for(var fruit in fruits){
+    console.log("key: ",fruit, "value: ", fruits[fruit]);
+ }
